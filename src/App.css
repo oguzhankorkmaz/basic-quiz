@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  box-sizing: border-box;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 75px 0;
+  background-color: #0f0f0f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  min-height: calc(100vh - 150px);
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 40px;
+  background-color: #ffa500;
+  cursor: pointer;
+}
+
+a.option {
+  padding: 20px;
+  margin: 20px 50px;
+  display: block;
+  cursor: pointer;
+  border: 1px solid #ffa500;
+}
+
+label > input,
+label > span {
+  display: none;
+}
+
+label > input[type="radio"]:checked ~ a {
+  background-color: #ffa500;
+}
+
+.point-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.point-title {
+  font-size: 24px;
+}
+
+.point {
+  font-size: 72px;
+  color: #ffa500;
+  margin: 20px;
+}
+
+.point span {
+  color: #ffa500;
+  font-size: 48px;
 }
